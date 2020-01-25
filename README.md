@@ -38,6 +38,7 @@ Authorization: Bearer <access_token>
 * access_token is 123 
 ```
 
+#### Public Endpoints
 
 ##### GET Country Metrics from Cloudwatch
 ```
@@ -73,7 +74,6 @@ GET /metrics?country=Canada&period=3000&start_time=2020-01-24T12:00:00&end_time=
 }
 ```
 
-#### Public Endpoints
 ##### GET Collected Tweets
 ```
 GET /tweets
