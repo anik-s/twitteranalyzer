@@ -1,0 +1,17 @@
+region_name: us-east-1
+twitter_api:
+  consumer_key: XXXXXX
+  consumer_secret: XXXXX
+  access_token: XXXXX
+  access_token_secret: XXXX
+
+queue: TweetQueue # the sqs where tweet data is pushed or processing
+
+tweet_table: tweet # dynamodb table
+
+metric_namespace: TWEETSDATA4 # metric namespace for publishing country information of a tweet
+
+stage: dev
+service_name: twitteranalyzer
+twitter_stream_lambda: twitter_stream
+
