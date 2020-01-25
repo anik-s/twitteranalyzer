@@ -1,24 +1,27 @@
-# Twitter real time feed consumer and analyzer
+# Twitter Real Time Feed Consumer and Analyzer
 
 
-####Requirements
+#### Requirements
 * npm
 * serverless framework
 * Python 3.7 or later
 
-####Commands
+#### Commands
 ```
 npm install
 pip install -r requirements.txt
 sls deploy
 ```
 
-####Private Endpoints
+#### Postman Collection
+* Postman collection is inside postman_collection directory
+
+#### Private Endpoints
 ##### Start Consuming Twitter Feed
 ```
 GET /tweets/start/?keywords=football
 ```
-#####Sample Response
+##### Sample Response
 ```
 {
     "status": true
@@ -36,13 +39,13 @@ Authorization: Bearer <access_token>
 ```
 
 
-####Public Endpoints
-#####GET Collected Tweets
+#### Public Endpoints
+##### GET Collected Tweets
 ```
 GET /tweets
 ```
 
-#####Sample Response
+##### Sample Response
 ```
 {
     "tweets": [
@@ -19913,12 +19916,12 @@ GET /tweets
 }
 ```
 
-#####GET Country Metrics from Cloudwatch
+##### GET Country Metrics from Cloudwatch
 ```
 GET /metrics?country=Canada&period=3000&start_time=2020-01-24T12:00:00&end_time=2020-01-26T23:00:00
 ```
 
-#####Sample Response
+##### Sample Response
 ```
 {
     "Label": "NumberOfTweets",
