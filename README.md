@@ -6,7 +6,22 @@
 * serverless framework
 * Python 3.7 or later
 
-#### Commands
+#### AWS Credentials Profile Format
+```
+[anik-profile]
+aws_access_key_id = XXXXXXXX
+aws_secret_access_key = XXXXXXXXX
+region=us-east-1
+```
+
+
+##### AWS Profile Selection Command
+```
+export AWS_PROFILE="anik-profile" && export AWS_REGION=us-east-1
+```
+
+#### Deploy Commands
+Put Proper Config on config.yml and run below commands
 ```
 npm install
 pip install -r requirements.txt
